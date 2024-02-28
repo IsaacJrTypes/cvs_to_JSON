@@ -17,14 +17,15 @@ const headerProps = parsedData.data[0];
 try {
     const jsonArr = [];
     for (let i = 1; i < parsedData.data.length; i++) {
-        const line = parsedData.data[i];
+        const parsedLine = parsedData.data[i];
         const obj = {};
         for (let j = 0; j < headerProps.length; j++) {
-            if (j < 14) {
-                obj[headerProps[j]] = line[j];
+            nestedJsonString = 14
+            if (j < nestedJsonString) {
+                obj[headerProps[j]] = parsedLine[j];
                 continue;
             }
-            obj[headerProps[j]] = validateString(line[j]);
+            obj[headerProps[j]] = validateString(parsedLine[j]);
         }
         jsonArr.push(obj);
 
