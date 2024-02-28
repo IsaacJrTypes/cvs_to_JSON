@@ -31,7 +31,7 @@ try {
 
         // Write file
         const content = JSON.stringify(jsonArr, null, 2);
-        await fs.writeFileSync('./assets/data.json', content);
+        fs.writeFileSync('./assets/data.json', content);
 
     }
 } catch (err) {
