@@ -20,7 +20,7 @@ try {
         const parsedLine = parsedData.data[i];
         const obj = {};
         for (let j = 0; j < headerProps.length; j++) {
-            nestedJsonString = 14
+            const nestedJsonString = 14;
             if (j < nestedJsonString) {
                 obj[headerProps[j]] = parsedLine[j];
                 continue;
